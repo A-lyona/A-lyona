@@ -25,4 +25,4 @@
 > Marathon successfully passed: 5 days - 5 JavaScript projects from Vladilen Minin's IT school.  
 
 > Completed the free JavaScript/Front-end course from The Rolling Scopes community.  
-
+<img src="https://github.com/A-lyona/A-lyona/blob/main/certificate.png">

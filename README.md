@@ -28,5 +28,3 @@
 <div align="center">  
   <img src="https://github.com/A-lyona/A-lyona/blob/main/certificate.png"  width="500px">
 </div>
-
-### Education and training courses

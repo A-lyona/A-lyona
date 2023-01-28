@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/0.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header_wrapper">
+      <h1 class="blink" id="blink">киномания</h1>
+      <div class="header_details">
+        <p class="header_score">
+          Счёт: <span class="header_score_value">0</span>
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main_wrapper">
+        <div class="main_wrapper_button">
+          <div class="main_button start">
+            <p class="main_button_name">начать</p>
+          </div>
+        </div>
+      </div>
+      <div class="quiz_wrapper">
+        <div class="quiz_question_wrapper">
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">мультфильм</p>
+          </div>
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">сериал</p>
+          </div>
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">зарубежное кино</p>
+          </div>
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">передача</p>
+          </div>
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">советское кино</p>
+          </div>
+          <div class="quiz_question_button">
+            <p class="quiz_question_name">ток-шоу</p>
+          </div>
+        </div>
+        <div class="quiz_audio_wrapper">
+          <div class="quiz_audio_img"></div>
+          <div class="quiz_audio_player">
+            <h2 class="score_title">**********</h2>
+            <div class="audio_player_controls">
+              <div class="audio_play">
+                <div class="audio_play_icon"></div>
+                <input
+                  type="range"
+                  value="0"
+                  min="0"
+                  max="100"
+                  step="1"
+                  class="audio_player_progress"
+                />
+              </div>
+              <div class="audio_volume">
+                <div class="audio_volume_icon"></div>
+                <input
+                  type="range"
+                  value="40"
+                  min="0"
+                  max="100"
+                  step="1"
+                  class="audio_player_volume"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz_answer_wrapper">
+          <div class="quiz_answer_button">
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+            <div class="quiz_answer_option">
+              <p class="quiz_answer_name"></p>
+            </div>
+          </div>
+          <div class="quiz_answer_kard_gag"></div>
+          <div class="quiz_answer_kard">
+            <div class="quiz_answer_kard_img"></div>
+            <p class="quiz_answer_kard_title"></p>
+            <div class="quiz_answer_kard_audio">
+              <div class="quiz_answer_play_icon"></div>
+              <input
+                type="range"
+                value="0"
+                min="0"
+                max="100"
+                step="1"
+                class="quiz_answer_audio_input"
+              />
+            </div>
+            <p class="quiz_answer_kard_title2"></p>
+          </div>
+        </div>
+        <div class="quiz_button">
+          <p class="quiz_button_name">следующий вопрос</p>
+        </div>
+      </div>
+      <div class="score_wrapper">
+        <h2 class="score_title">Поздравляем!</h2>
+        <p class="score_title">
+          Вы прошли викторину <br />
+          со счётом <span class="score_value">0</span> / 30.
+        </p>
+        <div class="score_button">
+          <p class="score_button_name">переиграть</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer_wrapper">
+      <div class="footer_kop">
+        <p class="footer_kop_title">©</p>
+        <p class="footer_kop_title">2022</p>
+        <p class="footer_kop_title">
+          <a href="https://github.com/A-lyona" class="anchor" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

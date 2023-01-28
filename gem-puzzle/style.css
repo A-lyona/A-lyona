@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  user-select: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: url(assets/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.body_cu:hover {
+  cursor: wait;
+}
+
+h1 {
+  margin: 70px auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 3vw;
+  color: #000;
+}
+
+main {
+  width: 22vw;
+  height: 22vw;
+  margin: 0 0 50px 0;
+}
+
+/* ....................................................................board_wrapper...................................................... */
+
+.board_wrapper {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #967d5e;
+}
+
+.but {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: url(assets/4.png);
+  background-size: cover;
+  font-style: italic;
+  font-size: 1.8vw;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+}
+
+.empty {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25vw;
+  height: 2vw;
+  margin: 0 0 0 16px;
+}
+
+.part_one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+  height: 2vw;
+}
+
+.part_two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 38%;
+  height: 2vw;
+}
+
+.time {
+  font-style: italic;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #000;
+}
+
+.moves {
+  font-style: italic;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #000;
+}
+
+.settings {
+  font-style: italic;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.pause:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.volume {
+  width: 30px;
+  height: 30px;
+  background: url(assets/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.volume_mute {
+  width: 30px;
+  height: 30px;
+  background: url(assets/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* ....................................................................first_wrapper...................................................... */
+
+.first_wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.2vw;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #967d5e;
+}
+
+.game {
+  font-style: italic;
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.save {
+  font-style: italic;
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: #000;
+}
+
+.load {
+  font-style: italic;
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.records {
+  font-style: italic;
+  font-size: 2.5vw;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.selValue {
+  display: block;
+  font-style: italic;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #000;
+  width: 40%;
+  box-sizing: border-box;
+  border: 0.2vw solid #000;
+  appearance: none;
+  background-image: url(assets/5.png);
+  background-color: transparent;
+  background-repeat: no-repeat, repeat;
+  background-position: right -10px center;
+  background-size: 2em auto, 100%;
+  cursor: pointer;
+}
+
+.valueMenu {
+  background-color: #967d5e;
+}
+
+/* ....................................................................results_wrapper...................................................... */
+
+.records_wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #967d5e;
+}
+
+.last_records {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  border-bottom: 3px solid #292929;
+}
+
+.last_records_number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-style: italic;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ....................................................................winner_wrapper...................................................... */
+
+.winner_wrapper {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5vw;
+  line-height: 5vw;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid #000;
+  background-color: #967d5e;
+}
+
+@media (max-width: 1599px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 5vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  main {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .part_one {
+    width: 63%;
+  }
+
+  .part_two {
+    width: 63%;
+  }
+
+  .time {
+    font-size: 2vw;
+  }
+
+  .moves {
+    font-size: 2vw;
+  }
+
+  .settings {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  footer {
+    height: 6vw;
+  }
+
+  main {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .part_one {
+    width: 90%;
+  }
+
+  .part_two {
+    width: 90%;
+  }
+
+  .time {
+    font-size: 2.3vw;
+  }
+
+  .moves {
+    font-size: 2.3vw;
+  }
+
+  .settings {
+    font-size: 2.3vw;
+  }
+
+  .game {
+    font-size: 4vw;
+  }
+
+  .save {
+    font-size: 4vw;
+  }
+
+  .load {
+    font-size: 4vw;
+  }
+
+  .records {
+    font-size: 4vw;
+  }
+
+  .selValue {
+    font-size: 3vw;
+    border: 0.3vw solid #000;
+  }
+}
+
+@media (max-width: 769px) {
+  h1 {
+    margin: 60px auto;
+    font-size: 5vw;
+  }
+
+  main {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .but {
+    font-size: 3vw;
+  }
+
+  .part_one {
+    width: 90%;
+  }
+
+  .part_two {
+    width: 90%;
+  }
+
+  .time {
+    font-size: 3.2vw;
+  }
+
+  .moves {
+    font-size: 3.2vw;
+  }
+
+  .settings {
+    font-size: 3.2vw;
+  }
+
+  .last_records_number {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 440px) {
+  h1 {
+    margin: 50px auto;
+    font-size: 8vw;
+  }
+
+  footer {
+    height: 35vw;
+  }
+
+  main {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .but {
+    font-size: 6vw;
+  }
+
+  .part_one {
+    flex-direction: column;
+    width: 100%;
+    height: 15vw;
+  }
+
+  .part_two {
+    flex-direction: column;
+    width: 100%;
+    height: 17vw;
+  }
+
+  .time {
+    font-size: 6vw;
+  }
+
+  .moves {
+    font-size: 5vw;
+  }
+
+  .settings {
+    font-size: 6vw;
+  }
+
+  .game {
+    font-size: 7vw;
+  }
+
+  .save {
+    font-size: 7vw;
+  }
+
+  .load {
+    font-size: 7vw;
+  }
+
+  .records {
+    font-size: 7vw;
+  }
+
+  .selValue {
+    font-size: 6vw;
+    border: 0.5vw solid #000;
+  }
+
+  .last_records_number {
+    font-size: 4vw;
+  }
+
+  .winner_wrapper {
+    font-size: 6vw;
+    line-height: 9vw;
+  }
+}

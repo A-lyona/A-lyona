@@ -1,0 +1,55 @@
+.om-sliderrange {
+	min-height: 70px;
+	width: 278px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+.om-sliderrange-range {
+	height: 4px;
+	position: relative;
+	margin: -8px 10px;
+}
+
+.om-sliderrange-display {
+	display: flex;
+	justify-content: space-between;
+	margin: -6px -33px 0;
+	font-size: 23px;
+	width: 345px;
+}
+
+.om-sliderrange-range:before {
+	display: block;
+	content: '';
+	height: 10px;
+	border-radius: 4px;
+	background: #c2c0c2;
+}
+
+.om-sliderrange-range-indicator {
+	height: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgb(16, 139, 113);
+}
+
+.om-sliderrange-button-start,
+.om-sliderrange-button-end {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 12px;
+	background-color: rgb(10, 87, 70);
+	left: 0;
+	top: 100%;
+	outline: none;
+	transform: translateY(-50%);
+	pointer-events: visible;
+}

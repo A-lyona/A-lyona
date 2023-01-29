@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="om-javascript-range-slider.css" />
+    <script src="om-javascript-range-slider.js"></script>
+    <link rel="shortcut icon" href="assets/100.png" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header_logo"></div>
+      <div class="header_form_wrapper">
+        <form class="header_form">
+          <input
+            class="header_search"
+            type="search"
+            value=""
+            placeholder="поиск..."
+            autofocus
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <div class="header_cart">
+        <img src="assets/2.png" alt="cart" />
+        <p class="header_cart_text">0</p>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="aside">
+        <select class="aside_selValue">
+          <option class="selValue_selected1">По породам, от А до Я</option>
+          <option class="selValue_selected2">По породам, от Я до А</option>
+          <option class="selValue_selected3">
+            Год выведения, по возрастанию
+          </option>
+          <option class="selValue_selected4">Год выведения, по убыванию</option>
+        </select>
+        <div class="aside_range">
+          <p class="aside_range_text">Количество на складе:</p>
+          <input
+            type="range"
+            name="pieces"
+            id="inputPieces"
+            multiple
+            min="5"
+            max="20"
+          />
+          <p class="aside_range_text">Максимальный вес:</p>
+          <input
+            type="range"
+            name="pieces"
+            id="inputPieces"
+            multiple
+            min="90"
+            max="350"
+          />
+        </div>
+        <div class="aside_filter">
+          <p class="aside_range_text">Категория по мясу:</p>
+          <div class="aside_filter_block">
+            <input
+              type="checkbox"
+              class="aside_filter_checkbox checkbox_one"
+            />Мясные
+            <input
+              type="checkbox"
+              class="aside_filter_checkbox checkbox_two"
+            />Мясо-сальные
+            <input
+              type="checkbox"
+              class="aside_filter_checkbox checkbox_three"
+            />Сальные
+          </div>
+          <p class="aside_range_text">Производитель:</p>
+          <div class="aside_filter_block">
+            <div class="aside_filter_breeder_one aside_filter_click"></div>
+            <div class="aside_filter_breeder_two aside_filter_click"></div>
+            <div class="aside_filter_breeder_three aside_filter_click"></div>
+          </div>
+          <p class="aside_range_text">Цвет:</p>
+          <div class="aside_filter_block">
+            <div class="aside_filter_color_one aside_filter_click"></div>
+            <div class="aside_filter_color_two aside_filter_click"></div>
+            <div class="aside_filter_color_three aside_filter_click"></div>
+            <div class="aside_filter_color_four aside_filter_click"></div>
+          </div>
+          <p class="aside_range_text">
+            Популярные:
+            <span><input type="checkbox" class="aside_range_checkbox" /></span>
+          </p>
+        </div>
+        <input type="reset" value="Сбросить фильтры" class="aside_reset" />
+        <input type="reset" value="По умолчанию" class="aside_reset_all" />
+      </aside>
+      <section class="wrapper_cards">
+        <div class="card">
+          <div class="card_content">
+            <p>Беркширская</p>
+            <img src="assets/images/1.png" alt="cart" />
+            <p>Год выведения: 1975г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 250кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: чёрный</p>
+            <p>На складе: 20шт</p>
+            <p>Популярность: да</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Брейтовская</p>
+            <img src="assets/images/2.png" alt="cart" />
+            <p>Год выведения: 1948г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 220кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 5шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Вьетнамская вислобрюхая</p>
+            <img src="assets/images/3.png" alt="cart" />
+            <p>Год выведения: 1980г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 120кг</p>
+            <p>Категория: сальная</p>
+            <p>Цвет: чёрный</p>
+            <p>На складе: 8шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Гемпшир</p>
+            <img src="assets/images/4.png" alt="cart" />
+            <p>Год выведения: 1835г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 312кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: чёрный</p>
+            <p>На складе: 3шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Дюрок</p>
+            <img src="assets/images/6.png" alt="cart" />
+            <p>Год выведения: 1883г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 340кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: коричневый</p>
+            <p>На складе: 1шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Крупная белая</p>
+            <img src="assets/images/7.png" alt="cart" />
+            <p>Год выведения: 1970г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 350кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 20шт</p>
+            <p>Популярность: да</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Крупная чёрная</p>
+            <img src="assets/images/20.png" alt="cart" />
+            <p>Год выведения: 1899г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 340кг</p>
+            <p>Категория: сальная</p>
+            <p>Цвет: чёрный</p>
+            <p>На складе: 11шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_content">
+            <p>Лакомб</p>
+            <img src="assets/images/8.png" alt="cart" />
+            <p>Год выведения: 1964г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 280кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 7шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Ландрас</p>
+            <img src="assets/images/9.png" alt="cart" />
+            <p>Год выведения: 1993г</p>
+            <p>Производитель: Бельгия</p>
+            <p>Максимальный вес: 310кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 5шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Латвийская</p>
+            <img src="assets/images/10.png" alt="cart" />
+            <p>Год выведения: 1967г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 320кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 4шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Ливенская</p>
+            <img src="assets/images/11.png" alt="cart" />
+            <p>Год выведения: 1949г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 300кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: пятнистая</p>
+            <p>На складе: 7шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Литовская</p>
+            <img src="assets/images/12.png" alt="cart" />
+            <p>Год выведения: 1967г</p>
+            <p>Производитель: Бельгия</p>
+            <p>Максимальный вес: 310кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 11шт</p>
+            <p>Популярность: да</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Мангалицкая</p>
+            <img src="assets/images/13.png" alt="cart" />
+            <p>Год выведения: 1833г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 100кг</p>
+            <p>Категория: сальная</p>
+            <p>Цвет: коричневый</p>
+            <p>На складе: 9шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Мейшан</p>
+            <img src="assets/images/14.png" alt="cart" />
+            <p>Год выведения: 1622г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 110кг</p>
+            <p>Категория: сальная</p>
+            <p>Цвет: чёрный</p>
+            <p>На складе: 11шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Миргородская</p>
+            <img src="assets/images/15.png" alt="cart" />
+            <p>Год выведения: 1940г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 300кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: пятнистая</p>
+            <p>На складе: 13шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Пьетрен</p>
+            <img src="assets/images/16.png" alt="cart" />
+            <p>Год выведения: 2018г</p>
+            <p>Производитель: Бельгия</p>
+            <p>Максимальный вес: 270кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: пятнистая</p>
+            <p>На складе: 6шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Степная белая</p>
+            <img src="assets/images/19.png" alt="cart" />
+            <p>Год выведения: 1934г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 350кг</p>
+            <p>Категория: сальная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 18шт</p>
+            <p>Популярность: да</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Степная рябая</p>
+            <img src="assets/images/17.png" alt="cart" />
+            <p>Год выведения: 1961г</p>
+            <p>Производитель: Венгрия</p>
+            <p>Максимальный вес: 280кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: пятнистая</p>
+            <p>На складе: 13шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Темворс</p>
+            <img src="assets/images/18.png" alt="cart" />
+            <p>Год выведения: 1620г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 250кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: коричневый</p>
+            <p>На складе: 4шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Хузумская</p>
+            <img src="assets/images/5.png" alt="cart" />
+            <p>Год выведения: 1954г</p>
+            <p>Производитель: Англия</p>
+            <p>Максимальный вес: 300кг</p>
+            <p>Категория: мясная</p>
+            <p>Цвет: коричневый</p>
+            <p>На складе: 4шт</p>
+            <p>Популярность: нет</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_content">
+            <p>Эстонская беконная</p>
+            <img src="assets/images/21.png" alt="cart" />
+            <p>Год выведения: 1961г</p>
+            <p>Производитель: Бельгия</p>
+            <p>Максимальный вес: 290кг</p>
+            <p>Категория: мясо-сальная</p>
+            <p>Цвет: розовый</p>
+            <p>На складе: 20шт</p>
+            <p>Популярность: да</p>
+          </div>
+          <div class="card_cart">
+            <img src="assets/4.png" alt="cart" />
+            <p class="text_cart">ДОБАВИТЬ</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_wrapper">
+        <div class="footer_kop">
+          <p class="footer_kop_title anchor">2022</p>
+          <p class="footer_kop_title">
+            <a href="https://github.com/A-lyona" class="anchor" target="_blank"
+              >Github</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

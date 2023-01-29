@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>virtual-piano</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/30.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Virtual Piano</h1>
+    </header>
+    <main class="main">
+      <div class="btn-container">
+        <button class="btn btn-notes btn-active">Notes</button>
+        <button class="btn btn-letters">Letters</button>
+      </div>
+      <div class="piano">
+        <div class="piano-key D" data-letter="D" data-note="c"></div>
+        <div class="piano-key F" data-letter="F" data-note="d"></div>
+        <div class="piano-key G" data-letter="G" data-note="e"></div>
+        <div class="piano-key H" data-letter="H" data-note="f"></div>
+        <div class="piano-key J" data-letter="J" data-note="g"></div>
+        <div class="piano-key K" data-letter="K" data-note="a"></div>
+        <div class="piano-key L" data-letter="L" data-note="b"></div>
+        <div class="keys-sharp">
+          <div class="piano-key sharp R" data-letter="R" data-note="c♯"></div>
+          <div class="piano-key sharp T" data-letter="T" data-note="d♯"></div>
+          <div class="piano-key sharp none"></div>
+          <div class="piano-key sharp U" data-letter="U" data-note="f♯"></div>
+          <div class="piano-key sharp I" data-letter="I" data-note="g♯"></div>
+          <div class="piano-key sharp O" data-letter="O" data-note="a♯"></div>
+        </div>
+      </div>
+      <button class="fullscreen openfullscreen"></button>
+    </main>
+    <footer class="footer">
+      <p>2021</p>
+      <p>
+        <a class="kop" href="https://github.com/A-lyona" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

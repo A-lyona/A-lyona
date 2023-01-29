@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>tic-tac-toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/100.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="wrapper">
+      <div class="left_part">
+        <div class="game_wrapper">
+          <div class="field_wrapper">
+            <div class="game_fill field_part1"></div>
+            <div class="game_fill field_part2"></div>
+            <div class="game_fill field_part3"></div>
+          </div>
+          <div class="field_wrapper">
+            <div class="game_fill field_part4"></div>
+            <div class="game_fill field_part5"></div>
+            <div class="game_fill field_part6"></div>
+          </div>
+          <div class="field_wrapper">
+            <div class="game_fill field_part7"></div>
+            <div class="game_fill field_part8"></div>
+            <div class="game_fill field_part9"></div>
+          </div>
+        </div>
+        <div class="game_chips_wrapper">
+          <div class="game_chips_o"></div>
+          <p class="game_chips_text">OR</p>
+          <div class="game_chips_x"></div>
+        </div>
+        <div class="game_chips_counter">
+          <span>Counter : </span>
+          <span class="counter">&nbsp;0</span>
+        </div>
+        <div class="game_win_wrapper_o">
+          <div class="win_message">
+            <h2 class="win_message_title">Great!</h2>
+            <p class="win_message_text">
+              Winner
+              <img src="assets/chipsO.png" alt="" />
+            </p>
+            <button class="win_button_o">restart</button>
+          </div>
+        </div>
+        <div class="game_win_wrapper_x">
+          <div class="win_message">
+            <h2 class="win_message_title">Great!</h2>
+            <p class="win_message_text">
+              Winner
+              <img src="assets/chipsX.png" alt="" />
+            </p>
+            <button class="win_button_x">restart</button>
+          </div>
+        </div>
+        <div class="game_win_wrapper_n">
+          <div class="win_message">
+            <h2 class="win_message_title">Draw!</h2>
+            <p class="win_message_text">Start the game again</p>
+            <button class="win_button_n">restart</button>
+          </div>
+        </div>
+      </div>
+      <div class="right_part">
+        <div class="right_part_button_wrapper">
+          <div class="complexContent">
+            <button class="choose" id="one">pink theme</button>
+            <button class="choose" id="two">green theme</button>
+            <button class="cho choose" id="three">blue theme</button>
+          </div>
+        </div>
+        <div class="results_content_wrapper">
+          <div class="title">
+            <h2>Latest Results</h2>
+          </div>
+          <div class="last_content_wrapper">
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>1.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>2.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>3.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>4.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>5.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>6.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>7.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>8.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>9.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+            <div class="last_results">
+              <div class="last_results_number">
+                <p>10.</p>
+                <span class="counter_results"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="moment_player">
+          <audio src="assets/sounds/Waiting for You.mp3"></audio>
+          <div class="moment_player_controls">
+            <button class="moment_play_prev moment_player_icon"></button>
+            <button
+              class="moment_play moment_player_icon button_player"
+            ></button>
+            <button class="moment_play_next moment_player_icon"></button>
+          </div>
+          <ul class="moment_play_list">
+            <li class="moment_play_item" data-audio="0"></li>
+            <li class="moment_play_item" data-audio="1"></li>
+            <li class="moment_play_item" data-audio="2"></li>
+            <li class="moment_play_item" data-audio="3"></li>
+          </ul>
+        </div>
+        <div class="footer_kop">
+          <p class="footer_kop_title">©</p>
+          <p class="footer_kop_title">2022</p>
+          <p class="footer_kop_title">
+            <a href="https://github.com/A-lyona" class="anchor" target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

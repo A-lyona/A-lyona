@@ -4,7 +4,7 @@
 <h3 align="center">Hello, i'm Alena!</h3>
 
 I am a beginner FRONT-END DEVELOPER from Ukraine, who likes to create beautiful and simple web applications.
-You can look for my projects [here](https://github.com/A-lyona/A-lyona/tree/gh-pages) also on my [CodePen](https://codepen.io/a-lyona/pens/public) profile.
+You can look for my projects [here](https://github.com/A-lyona/A-lyona/tree/gh-pages), also on my [CodePen](https://codepen.io/a-lyona/pens/public) profile.
 ---
 
 ***

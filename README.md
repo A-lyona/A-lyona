@@ -19,7 +19,9 @@ You can look for my projects [here](https://github.com/A-lyona/A-lyona/tree/gh-p
 
 > Interactive online courses at HTML Academy on advanced web development technologies.
   
-> I am constantly improving my skills by solving tasks on codewars.  
+> I am constantly improving my skills by solving tasks on codewars. 
+
+[![Codewars Badge](https://www.codewars.com/users/A-lyona/badges/large)](https://www.codewars.com/users/A-lyona)
 
 > Passed training on the online platform for learning Hexlet programming for the profession of a front-end developer.  
 

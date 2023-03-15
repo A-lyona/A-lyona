@@ -31,6 +31,6 @@ You can look for my projects [here](https://github.com/A-lyona/A-lyona/tree/gh-p
 
 > Completed the free JavaScript/Front-end course from The Rolling Scopes community. 
 <div align="center">  
-  <img src="https://github.com/A-lyona/A-lyona/blob/main/certificate.png"  width="450px">
-  <img src="https://github.com/A-lyona/A-lyona/blob/main/englishdom-certificate.jpg"  width="450px">
+  <img src="https://github.com/A-lyona/A-lyona/blob/main/certificate.png"  width="300px">
+  <img src="https://github.com/A-lyona/A-lyona/blob/main/englishdom-certificate.jpg"  width="300px">
 </div>

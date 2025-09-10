@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif">
+  <img src="https://i.pinimg.com/1200x/a7/68/46/a76846be7f2ad33787abf5e6baf64fc1.jpg">
  </div>
 <h3 align="center">Hello, i'm Alena!</h3>
 

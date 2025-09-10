@@ -11,7 +11,7 @@ You can look for my projects [here](https://github.com/A-lyona/A-lyona/tree/gh-p
 ### About Me
 
 <img src="https://cdn-icons-png.flaticon.com/512/7906/7906697.png" width="15px" height="15px"> I am distinguished by such qualities as optimism, the ability to work in a team, the willingness to take on new projects,<br>the desire for new knowledge, the ability to bring things to the end.  
-<img src="https://cdn-icons-png.flaticon.com/512/7906/7906697.png" width="15px" height="15px"> My goal is to gain more confident skills and     knowledge that will help me realize my dream - to become a confident developer in my knowledge.  
+<img src="https://cdn-icons-png.flaticon.com/512/7906/7906697.png" width="15px" height="15px"> My goal is to gain more confident skills and     knowledge that will help me realize my dream - to become a confident developer.  
 <img src="https://cdn-icons-png.flaticon.com/512/7906/7906697.png" width="15px" height="15px"> You can contact me at [Telegram](https://t.me/Aleonka21) and [Facebook](https://www.facebook.com/profile.php?id=100053720438412) 
 
 ***

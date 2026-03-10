@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.pinimg.com/1200x/f3/3f/e2/f33fe254037aabe777cba7bda24a32a1.jpg">
+  <img src="https://i.pinimg.com/1200x/31/61/2e/31612eaf8039a82452a2e71d13538e68.jpg">
  </div>
 <h3 align="center">Hello, i'm Alena!</h3>
 
